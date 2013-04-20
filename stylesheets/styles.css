@@ -270,5 +270,10 @@ footer {
 }
 
 .project_header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header h1 a {
+  color: black;
+  font-weight: bold;
 }
