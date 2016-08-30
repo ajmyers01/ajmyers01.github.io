@@ -1,0 +1,47 @@
+{
+  "website":{
+    "title": "Jack's blog"
+  },
+  "nav":{
+    "home": "Home",
+    "about_me": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "career": "Career",
+    "blog": "Blog",
+    "link": "Link"
+  },
+  "about_me":{
+    "about_me": "About Me",
+    "des": "I am a full stack Rails developer, located in Fort Wayne, Indiana."
+  },
+  "skills":{
+    "my_skills": "My Skills"
+  },
+  "projects":{
+    "my_projects": "My Projects"
+  },
+  "career":{
+    "my_career": "My Career",
+    "nextcode": "Enspire Software",
+    "nextcode_des": "Full stack Rails Engineer, and Scrum Master at Enspire software. Created multiple different software solutions, for customers. Technologies used: Ruby on Rails, node.js, Rails CMS, IOS, Andriod, Javascript, Bootstrap, RubyMotion, Magento, Minitest, Cucumber, Jenkins CI.",
+    "nextcode_date": "November 2015",
+    "nextcode_job": "Full Stack Rails Developer, Scrum Master",
+    "netease": "Squaremouth inc.",
+    "netease_des": "Full Stack Rails Engineer. Maintained a large codebase, Devops experience in Chef, and Docker. As well as acting as a liason between Squaremouth and it's Carriers.",
+    "netease_date": "June 2012",
+    "netease_job": "Full Stack Rails Developer",
+    "college": "Graduation",
+    "college_des": "At July 2014,I graduated from Indiana Tech Fort Wayne.",
+    "college_date": "Jul. 2010 - 2014",
+    "college_job": "Student - Bachelor of Science in Software Engineering"
+  },
+  "blog":{
+    "my_blog": "My Blog"
+  },
+  "link":{
+    "link": "Link",
+    "view": "views"
+  }
+
+}

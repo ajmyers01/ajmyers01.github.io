@@ -1,0 +1,100 @@
+# Welcome to Jekyll!
+
+# Website settings
+title: "AlexMyers.net"
+description: "Alex Myers's github pages site."
+keywords: "Alex,Myers,blog,Jekyll,github,gh-pages"
+baseurl: "/"
+url: "http://www.alexmyers.net"
+# url: "http://127.0.0.1:4000"
+
+# author
+author:
+  name: 'Alex Myers'
+  first_name: 'Alex'
+  last_name: 'Myers'
+  email: 'dev.alex.myers@gmail.com'
+  facebook_username: 'p3rishable'
+  github_username: 'ajmyers01'
+  head_img: 'static/img/landing/Jack.png'
+
+# social link
+jingyu:
+  first_name: 'Yu'
+  last_name: 'Jing'
+  description: 'Painter.'
+  link: 'http://angular.jack003.com'
+  email: '805963294@qq.com'
+
+# landing page
+landing:
+  home: 'Home'
+  about: 'About'
+  career: 'Career'
+  skills: 'Skills'
+  projects: 'Project'
+  blog: 'Blog'
+
+# my projects
+project:
+  saplatform:
+    name: 'Squaremouth.com'
+    url: 'www.squaremouth.com'
+    img: 'static/img/landing/squaremouth_thumb.png'
+  jalpc:
+    name: 'ProfitHauler.com'
+    url: 'app.profithauler.com'
+    img: 'static/img/landing/profit_hauler_big.png'
+  angularjs:
+    name: 'TotalRER'
+    url: 'beta.totalrer.com'
+    img: 'static/img/landing/totalrer_big.png'
+  Rsser:
+    name: 'Livstyle'
+    url: 'app.findyourlivstyle.com/'
+    img: 'static/img/landing/livstyle_big.png'
+
+# blog index
+index:
+  home: 'Home'
+  python: 'Python'
+  linux: 'Linux'
+  html: 'HTML'
+  database: 'Database'
+  mac: 'Mac'
+  life: 'Life'
+
+# donate
+donate:
+  wechat: 'static/img/pay/wechat.png'
+  alipay: 'static/img/pay/alipay.png'
+
+# comment
+changyan:
+  # appid: cysfY7ULn
+  # conf: prod_861928934cecb7a18e15bedaed9dae29
+disqus:
+  name: jalpc
+  public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
+
+# share
+bshare:
+  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
+
+# baidu analytics
+ba:
+  uuid: 317acca9ef9255b934e46371e471431d
+
+# google analytics
+ga:
+  id: UA-73784599-1
+
+# Build settings
+encoding: "utf-8"
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
