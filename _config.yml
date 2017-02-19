@@ -53,6 +53,31 @@ project:
     name: 'Livstyle'
     url: 'app.findyourlivstyle.com/'
     img: 'static/img/landing/livstyle_big.png'
+  Honorflight:
+    name: 'HonorFlight'
+    url: 'app.hfnei.org'
+    img: 'static/img/landing/hfnei.png'
+  peensolver:
+    name: 'Peen Solver'
+    url: 'peensolver.com'
+    img: 'static/img/landing/peensolver.png'
+  arozone:
+    name: 'AroZone Training Software'
+    url: 'training.arozone.com/'
+    img: 'static/img/landing/arozone.png'
+  goodwill:
+    name: 'Goodwill Rewards System'
+    url: 'goodpoints.goodwill-ni.org/login'
+    img: 'static/img/landing/goodwill.png'
+  fruchey:
+    name: 'Fruchey Management System'
+    url: '159.203.81.5:6040/admin'
+    img: 'static/img/landing/fruchey.png'
+  deister:
+    name: 'Deister Machine Management System'
+    url: '159.203.81.5:6050/login'
+    img: 'static/img/landing/deister.png'
+
 
 # blog index
 index:
