@@ -214,10 +214,9 @@
 
 <p>解决方法：</p>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="n">tablename</span> <span class="k">SET</span> <span class="n">field</span> <span class="o">=</span> <span class="k">REPLACE</span><span class="p">(</span><span class="k">REPLACE</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">,</span> <span class="s1">''</span><span class="p">),</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="n">tablename</span> <span class="k">SET</span> <span class="n">field</span> <span class="o">=</span> <span class="k">REPLACE</span><span class="p">(</span><span class="k">REPLACE</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="s1">'</span><span class="se">\r</span><span class="s1">'</span><span class="p">,</span> <span class="s1">''</span><span class="p">),</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">''</span><span class="p">);</span>
 <span class="k">UPDATE</span> <span class="n">tablename</span> <span class="k">SET</span> <span class="n">field</span> <span class="o">=</span> <span class="k">REPLACE</span><span class="p">(</span><span class="k">REPLACE</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="n">CHAR</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="s1">''</span><span class="p">),</span> <span class="n">CHAR</span><span class="p">(</span><span class="mi">13</span><span class="p">),</span> <span class="s1">''</span><span class="p">);</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>char(10):  换行符
 char(13):  回车符</p>
@@ -232,29 +231,26 @@ char(13):  回车符</p>
 
 <p>的短信息(注意内容后有换行)通过(status改变成1)之前的SQL语句是不起作用的</p>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="nv">`tran`</span> 
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="nv">`tran`</span> 
 <span class="k">SET</span> <span class="nv">`status`</span> <span class="o">=</span> <span class="s1">'1'</span> 
 <span class="k">WHERE</span> <span class="nv">`msg`</span> <span class="o">=</span> <span class="s1">'我爱你'</span><span class="p">;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>修改之后的语句</p>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="nv">`tran`</span> 
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="nv">`tran`</span> 
 <span class="k">SET</span> <span class="nv">`status`</span> <span class="o">=</span> <span class="s1">'1'</span> 
 <span class="k">WHERE</span> <span class="k">trim</span><span class="p">(</span> <span class="k">replace</span><span class="p">(</span> <span class="nv">`msg`</span><span class="p">,</span> <span class="s1">'</span><span class="se">\r\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">' '</span> <span class="p">)</span> <span class="p">)</span> <span class="o">=</span> <span class="s1">'我爱你'</span><span class="p">;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>把数据中的回车换行等替换成空格之后再trim掉，就达到目的了，虽然不是特别完美，但是由于没办法在用户录入的时候控制，所以只能出此下策，好在MySQL内置函数的效率还是很有保证的。</p>
 
-<div class="language-sql highlighter-rouge"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="nv">`tran`</span> 
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="nv">`tran`</span> 
 <span class="k">SET</span> <span class="nv">`status`</span> <span class="o">=</span> <span class="s1">'1'</span> 
 <span class="k">WHERE</span> <span class="k">trim</span><span class="p">(</span> <span class="k">trim</span><span class="p">(</span> 
 <span class="k">BOTH</span> <span class="s1">'</span><span class="se">\r\n</span><span class="s1">'</span> 
 <span class="k">FROM</span> <span class="n">content</span> <span class="p">)</span> <span class="p">)</span> <span class="o">=</span> <span class="s1">'我爱你'</span><span class="p">;</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>用了两个trim，这样的好处是不会替换内容中间的换行和回车，只会处理头尾的空格换行回车，相当于php中trim函数的作用了。</p>
 
@@ -277,7 +273,7 @@ char(13):  回车符</p>
                                 <div> 
                                 
                                 
-                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.alexmyers.net/database/2015/10/15/mysql-n-r.html">0</span> comments
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/database/2015/10/15/mysql-n-r.html">0</span> comments
                                 
                                 </div>
                             </div>

@@ -209,7 +209,7 @@
                             PEP8 Python 编码规范整理
                         </h1>
                     </div>
-                    	<h4 id="section">一、代码编排</h4>
+                    	<h4 id="一代码编排">一、代码编排</h4>
 
 <ol>
   <li>
@@ -223,7 +223,7 @@
   </li>
 </ol>
 
-<h4 id="section-1">二、文档编排</h4>
+<h4 id="二文档编排">二、文档编排</h4>
 
 <ol>
   <li>
@@ -237,9 +237,9 @@
   </li>
 </ol>
 
-<h4 id="section-2">三、空格的使用</h4>
+<h4 id="三空格的使用">三、空格的使用</h4>
 
-<h6 id="section-3">总体原则，避免不必要的空格。</h6>
+<h6 id="总体原则避免不必要的空格">总体原则，避免不必要的空格。</h6>
 
 <ol>
   <li>
@@ -268,23 +268,22 @@
   </li>
 </ol>
 
-<h4 id="section-4">四、注释</h4>
+<h4 id="四注释">四、注释</h4>
 
-<h6 id="section-5">总体原则，错误的注释不如没有注释。所以当一段代码发生变化时，第一件事就是要修改注释！</h6>
+<h6 id="总体原则错误的注释不如没有注释所以当一段代码发生变化时第一件事就是要修改注释">总体原则，错误的注释不如没有注释。所以当一段代码发生变化时，第一件事就是要修改注释！</h6>
 
-<h6 id="section-6">注释必须使用英文，最好是完整的句子，首字母大写，句后要有结束符，结束符后跟两个空格，开始下一句。如果是短语，可以省略结束符。</h6>
+<h6 id="注释必须使用英文最好是完整的句子首字母大写句后要有结束符结束符后跟两个空格开始下一句如果是短语可以省略结束符">注释必须使用英文，最好是完整的句子，首字母大写，句后要有结束符，结束符后跟两个空格，开始下一句。如果是短语，可以省略结束符。</h6>
 
 <ol>
   <li>块注释，在一段代码前增加的注释。在‘#’后加一空格。段落之间以只有‘#’的行间隔。比如：</li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># Description : Module config.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Description : Module config.
 # 
 # Input : None
 #
 # Output : None
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>
@@ -296,24 +295,27 @@
   </li>
 </ol>
 
-<h4 id="section-7">五、文档描述</h4>
+<h4 id="五文档描述">五、文档描述</h4>
 
 <ol>
   <li>
     <p>为所有的共有模块、函数、类、方法写docstrings；非共有的没有必要，但是可以写注释（在def的下一行）。</p>
   </li>
   <li>
-    <p>如果docstring要换行，参考如下例子,详见PEP 257
-&gt;Return a foobang
+    <p>如果docstring要换行，参考如下例子,详见PEP 257</p>
+    <blockquote>
+      <p>Return a foobang
 Optional plotz says to frobnicate the bizbaz first.</p>
+    </blockquote>
   </li>
 </ol>
 
-<h4 id="section-8">六、命名规范</h4>
-<p>###### 总体原则，新编代码必须按下面命名风格进行，现有库的编码尽量保持风格。
-1. 尽量单独使用小写字母‘l’，大写字母‘O’等容易混淆的字母。</p>
-
+<h4 id="六命名规范">六、命名规范</h4>
+<h6 id="总体原则新编代码必须按下面命名风格进行现有库的编码尽量保持风格">总体原则，新编代码必须按下面命名风格进行，现有库的编码尽量保持风格。</h6>
 <ol>
+  <li>
+    <p>尽量单独使用小写字母‘l’，大写字母‘O’等容易混淆的字母。</p>
+  </li>
   <li>
     <p>模块命名尽量短小，使用全部小写的方式，可以使用下划线。</p>
   </li>
@@ -353,7 +355,7 @@ Optional plotz says to frobnicate the bizbaz first.</p>
   </li>
 </ol>
 
-<h4 id="section-9">七、编码建议</h4>
+<h4 id="七编码建议">七、编码建议</h4>
 
 <ol>
   <li>
@@ -373,25 +375,23 @@ Optional plotz says to frobnicate the bizbaz first.</p>
   </li>
 </ol>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
     <span class="n">value</span> <span class="o">=</span> <span class="n">collection</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
 <span class="k">except</span> <span class="nb">KeyError</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">key_not_found</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="k">return</span> <span class="n">handle_value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>要优于</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">try</span><span class="p">:</span>
 <span class="c"># Too broad!</span>
     <span class="k">return</span> <span class="n">handle_value</span><span class="p">(</span><span class="n">collection</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
 <span class="k">except</span> <span class="nb">KeyError</span><span class="p">:</span>
 <span class="c"># Will also catch KeyError raised by handle_value()</span>
     <span class="k">return</span> <span class="n">key_not_found</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <ol>
   <li>
@@ -434,7 +434,7 @@ if not len(seq)</code></p>
                                 <div> 
                                 
                                 
-                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.alexmyers.net/python/2016/04/06/python-standard.html">0</span> comments
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/python/2016/04/06/python-standard.html">0</span> comments
                                 
                                 </div>
                             </div>
