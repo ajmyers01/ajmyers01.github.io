@@ -226,7 +226,7 @@
 <p>看样子是没有图片了，但是打开<a href="http://www.pythonchallenge.com/pc/return/evil4.jpg">http://www.pythonchallenge.com/pc/return/evil4.jpg</a> 看到如下语句：<strong>Bert is evil! go back!</strong>，在chrome浏览器是看不到的，我是在IE浏览器上看到。
 回想网页开始的图片，是在均分扑克牌，这应该就是解题的思路了，那么代码很简单了，如下：</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
  
 <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">'evil2.gfx'</span><span class="p">)</span>
 <span class="n">text</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -236,8 +236,7 @@
     <span class="n">f</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span><span class="s">'wb'</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">text</span><span class="p">[</span><span class="n">i</span><span class="p">::</span><span class="mi">5</span><span class="p">])</span>
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>得到如下图片：</p>
 
@@ -269,7 +268,7 @@
                                 <div> 
                                 
                                 
-                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.alexmyers.net/python/2015/02/26/python-challenge12.html">0</span> comments
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/python/2015/02/26/python-challenge12.html">0</span> comments
                                 
                                 </div>
                             </div>
