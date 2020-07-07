@@ -77,6 +77,10 @@ project:
     name: 'Deister Machine Management System'
     url: '159.203.81.5:6050/login'
     img: 'static/img/landing/deister.png'
+  cmps:
+    name: 'CMPS Institute LLC'
+    url: 'https://www.cmpsinstitute.org/cmps'
+    img: 'static/img/landing/cmps.png'
 
 
 # blog index
