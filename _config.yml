@@ -81,6 +81,10 @@ project:
     name: 'CMPS Institute LLC'
     url: 'https://www.cmpsinstitute.org/cmps'
     img: 'static/img/landing/cmps.png'
+  ocp:
+    name: 'One Click Politics'
+    url: 'https://oneclickpolitics.com/'
+    img: 'static/img/landing/1clickpolitics.png'
 
 
 # blog index
