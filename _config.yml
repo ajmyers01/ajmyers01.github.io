@@ -83,7 +83,7 @@ project:
     img: 'static/img/landing/cmps.png'
   ocp:
     name: 'One Click Politics'
-    url: 'https://oneclickpolitics.com/'
+    url: 'www.oneclickpolitics.com/'
     img: 'static/img/landing/1clickpolitics.png'
 
 
