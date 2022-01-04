@@ -23,6 +23,10 @@
   },
   "career":{
     "my_career": "My Career",
+    "ocp": "One Click Politics",
+    "ocp_des": "Senior Software Engineer at One Click Politics. Modernized an archaic Monolith application into modernized Rails Microservices utilizing Docker images on AWS.",
+    "ocp_date": "July 2021 - Present",
+    "ocp_job": "Senior Software Engineer", 
     "cmps": "CMPS Institute",
     "cmps_des": "Senior Software Engineer, Maintained a Rails Monolith. Introduced Continous Integration and automated testing.",
     "cmps_date": "November 2017 - Current",
